@@ -40,13 +40,13 @@ public class Inicio_Juego {
                     System.out.println("Si - escribe s");
                     System.out.println("No - escribe n");
                     irNivel2 = Teclado.next();
-                    if (irNivel2 == "s") {
+                    if (irNivel2.equals("s") ) {
                         aleatorio.PreguntasNivel2();
                         System.out.println("Elija una opcion");
                         respuestanivel2 = Teclado.nextInt();
                     }
                     ;
-                    if (irNivel2 == "n")
+                    if (irNivel2.equals("n"))
                     {
                         System.out.println("Gracias por participar, has ganado: " + premio);
 
@@ -69,13 +69,13 @@ public class Inicio_Juego {
                     System.out.println("Si - escribe s");
                     System.out.println("No - escribe n");
                     irNivel2 = Teclado.next();
-                    if (irNivel2 == "s") {
+                    if (irNivel2.equals("s")) {
                         aleatorio.PreguntasNivel2();
                         System.out.println("Elija una opcion");
                         respuestanivel2 = Teclado.nextInt();
                     }
                     ;
-                    if (irNivel2 == "n")
+                    if (irNivel2.equals("n"))
                     {
                         System.out.println("Se ganó: " + premio);
 
@@ -98,13 +98,13 @@ public class Inicio_Juego {
                       System.out.println("Si - escribe s");
                       System.out.println("No - escribe n");
                       irNivel2 = Teclado.next();
-                    if (irNivel2 == "s") {
+                    if (irNivel2.equals("s")) {
                         aleatorio.PreguntasNivel2();
                         System.out.println("Elija una opcion");
                         respuestanivel2 = Teclado.nextInt();
                     }
                     ;
-                    if (irNivel2 == "n")
+                    if (irNivel2.equals("n"))
                     {
 
                         System.out.println("Se ganó: " + premio);
@@ -127,13 +127,13 @@ public class Inicio_Juego {
                     System.out.println("Si - escribe s");
                     System.out.println("No - escribe n");
                     irNivel2 = Teclado.next();
-                    if (irNivel2 == "s") {
+                    if (irNivel2.equals("s")) {
                         aleatorio.PreguntasNivel2();
                         System.out.println("Elija una opcion");
                         respuestanivel2 = Teclado.nextInt();
                     }
                     ;
-                    if (irNivel2 == "n")
+                    if (irNivel2.equals("n"))
                     {
                     	System.out.println("Se ganó: " + premio);
 
@@ -155,13 +155,13 @@ public class Inicio_Juego {
                     System.out.println("Si - escribe s");
                     System.out.println("No - escribe n");
                     irNivel2 = Teclado.next();
-                    if (irNivel2 == "s") {
+                    if (irNivel2.equals("n")) {
                         aleatorio.PreguntasNivel2();
                         System.out.println("Elija una opcion");
                         respuestanivel2 = Teclado.nextInt();
                     }
                     ;
-                    if (irNivel2 == "n")
+                    if (irNivel2.equals("n"))
                     {
                     	System.out.println("Se ganó: " + premio);
 
@@ -176,7 +176,7 @@ public class Inicio_Juego {
 
         }
 
-        if(irNivel2 == "s")
+        if(irNivel2.equals("s"))
         {
             switch (aleatorio.numero_Pregunta_Nivel2) {
                 case 1:
@@ -187,13 +187,13 @@ public class Inicio_Juego {
                         System.out.println("¿Desea continuar?");
                         System.out.println("Si - escribe s");
                         System.out.println("No - escribe n");
-                        if (irNivel3 == "s") {
+                        if (irNivel3.equals("s")) {
                             aleatorio.PreguntasNivel3();
                             System.out.println("Elija una opcion");
                             respuestanivel3 = Teclado.nextInt();
                         }
                         ;
-                        if (irNivel3 == "n") 
+                        if (irNivel3.equals("s")) 
                         {
                         	System.out.println("Se ganó: " + premio);
                         }
@@ -214,13 +214,13 @@ public class Inicio_Juego {
                         System.out.println("Si - escribe s");
                         System.out.println("No - escribe n");
                         irNivel3 = Teclado.next();
-                        if (irNivel3 == "s") {
+                        if (irNivel3.equals("s")) {
                             aleatorio.PreguntasNivel3();
                             System.out.println("Elija su respuesta correcta");
                             respuestanivel3 = Teclado.nextInt();
                         }
                         ;
-                        if (irNivel3 == "n")
+                        if (irNivel3.equals("n"))
                         { 
                         	System.out.println("Se ganó: " + premio);
                         }
@@ -241,13 +241,13 @@ public class Inicio_Juego {
                         System.out.println("Si - escribe s");
                         System.out.println("No - escribe n");
                         irNivel3 = Teclado.next();
-                        if (irNivel3 == "s") {
+                        if (irNivel3.equals("s")) {
                             aleatorio.PreguntasNivel3();
                             System.out.println("Elija una opcion");
                             respuestanivel3 = Teclado.nextInt();
                         }
                         ;
-                        if (irNivel3 == "n")
+                        if (irNivel3.equals("n"))
                         	{
                         		System.out.println("Se ganó: " + premio);
                         	}
@@ -269,13 +269,13 @@ public class Inicio_Juego {
                         System.out.println("Si - escribe s");
                         System.out.println("No - escribe n");
                         irNivel3 = Teclado.next();
-                        if (irNivel3 == "s") {
+                        if (irNivel3.equals("s")) {
                             aleatorio.PreguntasNivel3();
                             System.out.println("Elija una opcion");
                             respuestanivel3 = Teclado.nextInt();
                         }
                         ;
-                        if (irNivel3 == "n") 
+                        if (irNivel3.equals("n")) 
                         {
                         	System.out.println("Se ganó: " + premio);
                         }
@@ -295,13 +295,13 @@ public class Inicio_Juego {
                         System.out.println("Si - escribe s");
                         System.out.println("No - escribe n");
                         irNivel3 = Teclado.next();
-                        if (irNivel3 == "s") {
+                        if (irNivel3.equals("s")) {
                             aleatorio.PreguntasNivel3();
                             System.out.println("Elija una opcion");
                             respuestanivel3 = Teclado.nextInt();
                         }
                         ;
-                        if (irNivel3 == "n")
+                        if (irNivel3.equals("n"))
                         {
                         	System.out.println("Se ganó: " + premio);
                         }
@@ -314,7 +314,7 @@ public class Inicio_Juego {
 
             }
         }
-        if(irNivel3 =="s")
+        if(irNivel3.equals("s"))
         {
             switch (aleatorio.numero_Pregunta_Nivel3) {
                 case 1:
@@ -326,13 +326,13 @@ public class Inicio_Juego {
                         System.out.println("Si - escribe s");
                         System.out.println("No - escribe n");
                         irNivel4 = Teclado.next();
-                        if (irNivel4 == "s") {
+                        if (irNivel4.equals("s")) {
                             aleatorio.PreguntasNivel4();
                             System.out.println("Elija una opcion");
                             respuestanivel4 = Teclado.nextInt();
                         }
                         ;
-                        if (irNivel4 == "n") 
+                        if (irNivel4.equals("s")) 
                         {
                         	System.out.println("Se ganó: " + premio);
                         }
@@ -353,13 +353,13 @@ public class Inicio_Juego {
                         System.out.println("Si - escribe s");
                         System.out.println("No - escribe n");
                         irNivel4 = Teclado.next();
-                        if (irNivel4 == "s") {
+                        if (irNivel4.equals("s")) {
                             aleatorio.PreguntasNivel4();
                             System.out.println("Elija una opcion");
                             respuestanivel4 = Teclado.nextInt();
                         }
                         ;
-                        if (irNivel4 == "n")
+                        if (irNivel4.equals("n"))
                         	{
                         		System.out.println("Se ganó: " + premio);
                         	}
@@ -384,13 +384,13 @@ public class Inicio_Juego {
                         System.out.println("No - escribe n");
                         irNivel4 = Teclado.next();
                         
-                        if (irNivel4 == "s") {
+                        if (irNivel4.equals("s")) {
                             aleatorio.PreguntasNivel4();
                             System.out.println("Elija una opcion");
                             respuestanivel4 = Teclado.nextInt();
                         }
                         ;
-                        if (irNivel4 == "n") 
+                        if (irNivel4.equals("n")) 
                         	{
                         		System.out.println("Se ganó: " + premio);
                         	}
@@ -411,13 +411,13 @@ public class Inicio_Juego {
                         System.out.println("Si - escribe s");
                         System.out.println("No - escribe n");
                         irNivel4 = Teclado.next();
-                        if (irNivel4 == "s") {
+                        if (irNivel4.equals("s")) {
                             aleatorio.PreguntasNivel4();
                             System.out.println("Elija una opcion");
                             respuestanivel4 = Teclado.nextInt();
                         }
                         ;
-                        if (irNivel4 == "s")
+                        if (irNivel4.equals("n"))
                         	{
                         		System.out.println("Se ganó: " + premio);
                         	}
@@ -439,13 +439,13 @@ public class Inicio_Juego {
                         System.out.println("No - escribe n");
                         irNivel4 = Teclado.next();
                         
-                        if (irNivel4 =="s") {
+                        if (irNivel4.equals("s")) {
                             aleatorio.PreguntasNivel4();
                             System.out.println("Elija una opcion");
                             respuestanivel4 = Teclado.nextInt();
                         }
                         ;
-                        if (irNivel4 == "n")
+                        if (irNivel4.equals("n"))
                         	{
                         		System.out.println("Se ganó: " + premio);
                         	}
@@ -459,7 +459,7 @@ public class Inicio_Juego {
 
             }
         }
-        if(irNivel4 =="s")
+        if(irNivel4.equals("s"))
         {
             switch (aleatorio.numero_Pregunta_Nivel4) {
                 case 1:
@@ -471,13 +471,13 @@ public class Inicio_Juego {
                         System.out.println("Si - escribe s");
                         System.out.println("No - escribe n");
                         irNivel5 = Teclado.next();
-                        if (irNivel5 == "s") {
+                        if (irNivel5.equals("s")) {
                             aleatorio.PreguntasNivel5();
                             System.out.println("Elija una opcion");
                             respuestanivel5 = Teclado.nextInt();
                         }
                         ;
-                        if (irNivel5 == "n")
+                        if (irNivel5.equals("n"))
                         	{
                         	System.out.println("Se ganó: " + premio);
                         	}
@@ -498,13 +498,13 @@ public class Inicio_Juego {
                         System.out.println("Si - escribe s");
                         System.out.println("No - escribe n");
                         irNivel5 = Teclado.next();
-                        if (irNivel5 == "s") {
+                        if (irNivel5.equals("s")) {
                             aleatorio.PreguntasNivel5();
                             System.out.println("Elija una opcion");
                             respuestanivel5 = Teclado.nextInt();
                         }
                         ;
-                        if (irNivel5 == "n")
+                        if (irNivel5.equals("n"))
                         	{
                         		System.out.println("Se ganó: " + premio);
                         	}
@@ -526,13 +526,13 @@ public class Inicio_Juego {
                         System.out.println("Si - escribe s");
                         System.out.println("No - escribe n");
                         irNivel5 = Teclado.next();
-                        if (irNivel5 == "s") {
+                        if (irNivel5.equals("s")) {
                             aleatorio.PreguntasNivel5();
                             System.out.println("Elija una opcion");
                             respuestanivel5 = Teclado.nextInt();
                         }
                         ;
-                        if (irNivel5 == "n") 
+                        if (irNivel5.equals("n")) 
                         	{
                         		System.out.println("Se ganó: " + premio);
                         	}
@@ -553,13 +553,13 @@ public class Inicio_Juego {
                         System.out.println("Si - escribe s");
                         System.out.println("No - escribe n");
                         irNivel5 = Teclado.next();
-                        if (irNivel5 == "s") {
+                        if (irNivel5.equals("s")) {
                             aleatorio.PreguntasNivel5();
                             System.out.println("Elija una opcion");
                             respuestanivel5 = Teclado.nextInt();
                         }
                         ;
-                        if (irNivel5 == "n")
+                        if (irNivel5.equals("n"))
                         	{
                         		System.out.println("Se ganó: " + premio);
                         	}
@@ -580,14 +580,14 @@ public class Inicio_Juego {
                         System.out.println("No - escribe n");
                         irNivel5 = Teclado.next();
                         
-                        if (irNivel5 == "s")
+                        if (irNivel5.equals("s"))
                         {
                             aleatorio.PreguntasNivel5();
                             System.out.println("Elija una opcion");
                             respuestanivel5 = Teclado.nextInt();
                         }
                         ;
-                        if (irNivel5 == "n")
+                        if (irNivel5.equals("n"))
                         	{
                         		System.out.println("Se ganó: " + premio);
                         	}
@@ -601,7 +601,7 @@ public class Inicio_Juego {
 
             }
         }
-        if(irNivel5 =="s")
+        if(irNivel5.equals("s"))
         {
             switch (aleatorio.numero_Pregunta_Nivel5) {
                 case 1:
