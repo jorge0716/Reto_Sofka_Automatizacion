@@ -13,8 +13,8 @@ public class main {
 	        do {
 	        	juego.iniciarJuego();
 	            System.out.println("Nuevo Jugador?");
-	            System.out.println("Si: presiona la tecla 0");
-	            System.out.println("No: presiona la tecla 9");
+	            System.out.println("Si: presiona la tecla s");
+	            System.out.println("No: presiona la tecla n");
 	            continuar = Seguir.next();
 	            juego.Jugadores[cantidadJugadores] = juego.nombreJugador;
 	            juego.PremiosJugadores[cantidadJugadores] = juego.premio;

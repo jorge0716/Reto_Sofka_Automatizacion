@@ -3,7 +3,10 @@ import java.util.Scanner;
 
 public class Inicio_Juego {
 	
-	  private int respuestanivel1 = 0;
+
+		public String [] Jugadores = new String[200];
+		public double [] PremiosJugadores = new double[200];
+		private int respuestanivel1 = 0;
 	    private int respuestanivel2 = 0;
 	    private int respuestanivel3 = 0;
 	    private int respuestanivel4 = 0;
@@ -13,8 +16,6 @@ public class Inicio_Juego {
 	    private String irNivel4 = " ";
 	    private String irNivel5 = " ";
 	    public String nombreJugador = "";
-	    public String [] Jugadores = new String[100];
-	    public double [] PremiosJugadores = new double[100];
 	    public double premio = 0;
 	
 	public  void iniciarJuego() {
@@ -155,7 +156,7 @@ public class Inicio_Juego {
                     System.out.println("Si - escribe s");
                     System.out.println("No - escribe n");
                     irNivel2 = Teclado.next();
-                    if (irNivel2.equals("n")) {
+                    if (irNivel2.equals("s")) {
                         aleatorio.PreguntasNivel2();
                         System.out.println("Elija una opcion");
                         respuestanivel2 = Teclado.nextInt();
@@ -181,7 +182,7 @@ public class Inicio_Juego {
             switch (aleatorio.numero_Pregunta_Nivel2) {
                 case 1:
                     if (respuestanivel2 == 3) {
-                    	System.out.println("Vamos al nivel 2");
+                    	System.out.println("Vamos al nivel 3");
                         premio += 400000;
                         System.out.println(" Premio acumulado: " + premio);
                         System.out.println("¿Desea continuar?");
@@ -193,7 +194,7 @@ public class Inicio_Juego {
                             respuestanivel3 = Teclado.nextInt();
                         }
                         ;
-                        if (irNivel3.equals("s")) 
+                        if (irNivel3.equals("n")) 
                         {
                         	System.out.println("Se ganó: " + premio);
                         }
@@ -207,7 +208,7 @@ public class Inicio_Juego {
 
                 case 2:
                     if (respuestanivel2 == 1) {
-                    	System.out.println("Vamos al nivel 2");
+                    	System.out.println("Vamos al nivel 3");
                         premio += 400000;
                         System.out.println(" Premio acumulado: " + premio);
                         System.out.println("¿Desea continuar?");
@@ -234,7 +235,7 @@ public class Inicio_Juego {
 
                 case 3:
                     if (respuestanivel2 == 4) {
-                    	System.out.println("Vamos al nivel 2");
+                    	System.out.println("Vamos al nivel 3");
                         premio += 400000;
                         System.out.println(" Premio acumulado: " + premio);
                         System.out.println("¿Desea continuar?");
@@ -262,7 +263,7 @@ public class Inicio_Juego {
 
                 case 4:
                     if (respuestanivel2 == 2) {
-                    	System.out.println("Vamos al nivel 2");
+                    	System.out.println("Vamos al nivel 3");
                         premio += 400000;
                         System.out.println(" Premio acumulado: " + premio);
                         System.out.println("¿Desea continuar?");
@@ -288,7 +289,7 @@ public class Inicio_Juego {
 
                 case 5:
                     if (respuestanivel2 == 3) {
-                    	System.out.println("Vamos al nivel 2");
+                    	System.out.println("Vamos al nivel 3");
                         premio += 400000;
                         System.out.println(" Premio acumulado: " + premio);
                         System.out.println("¿Desea continuar?");
@@ -318,8 +319,8 @@ public class Inicio_Juego {
         {
             switch (aleatorio.numero_Pregunta_Nivel3) {
                 case 1:
-                    if (respuestanivel3 == 3) {
-                    	System.out.println("Vamos al nivel 2");
+                    if (respuestanivel3 == 1) {
+                    	System.out.println("Vamos al nivel 4");
                         premio += 500000;
                         System.out.println(" Premio acumulado: " + premio);
                         System.out.println("¿Desea continuar?");
@@ -332,13 +333,13 @@ public class Inicio_Juego {
                             respuestanivel4 = Teclado.nextInt();
                         }
                         ;
-                        if (irNivel4.equals("s")) 
+                        if (irNivel4.equals("n")) 
                         {
                         	System.out.println("Se ganó: " + premio);
                         }
 
                     }
-                    if (respuestanivel3 != 3) {
+                    if (respuestanivel3 != 1) {
                         System.out.println("Perdio...");
                     }
                     ;
@@ -346,7 +347,7 @@ public class Inicio_Juego {
 
                 case 2:
                     if (respuestanivel3 == 4) {
-                    	System.out.println("Vamos al nivel 2");
+                    	System.out.println("Vamos al nivel 4");
                         premio += 500000;
                         System.out.println(" Premio acumulado: " + premio);
                         System.out.println("¿Desea continuar?");
@@ -376,7 +377,7 @@ public class Inicio_Juego {
                 case 3:
                     if (respuestanivel3 == 1) {
                     	
-                    	System.out.println("Vamos al nivel 2");
+                    	System.out.println("Vamos al nivel 4");
                         premio += 500000;
                         System.out.println(" Premio acumulado: " + premio);
                         System.out.println("¿Desea continuar?");
@@ -404,7 +405,7 @@ public class Inicio_Juego {
 
                 case 4:
                     if (respuestanivel3 == 4) {
-                    	System.out.println("Vamos al nivel 2");
+                    	System.out.println("Vamos al nivel 4");
                         premio += 500000;
                         System.out.println(" Premio acumulado: " + premio);
                         System.out.println("¿Desea continuar?");
@@ -431,7 +432,7 @@ public class Inicio_Juego {
 
                 case 5:
                     if (respuestanivel3 == 1) {
-                    	System.out.println("Vamos al nivel 2");
+                    	System.out.println("Vamos al nivel 4");
                         premio += 500000;
                         System.out.println(" Premio acumulado: " + premio);
                         System.out.println("¿Desea continuar?");
@@ -464,7 +465,7 @@ public class Inicio_Juego {
             switch (aleatorio.numero_Pregunta_Nivel4) {
                 case 1:
                     if (respuestanivel4 == 4) {
-                    	System.out.println("Vamos al nivel 2");
+                    	System.out.println("Vamos al nivel 5");
                         premio += 800000;
                         System.out.println(" Premio acumulado: " + premio);
                         System.out.println("¿Desea continuar?");
@@ -491,7 +492,7 @@ public class Inicio_Juego {
 
                 case 2:
                     if (respuestanivel4 == 1) {
-                    	System.out.println("Vamos al nivel 2");
+                    	System.out.println("Vamos al nivel 5");
                         premio += 800000;
                         System.out.println(" Premio acumulado: " + premio);
                         System.out.println("¿Desea continuar?");
@@ -519,7 +520,7 @@ public class Inicio_Juego {
 
                 case 3:
                     if (respuestanivel4 == 2) {
-                    	System.out.println("Vamos al nivel 2");
+                    	System.out.println("Vamos al nivel 5");
                         premio += 800000;
                         System.out.println(" Premio acumulado: " + premio);
                         System.out.println("¿Desea continuar?");
@@ -546,7 +547,7 @@ public class Inicio_Juego {
 
                 case 4:
                     if (respuestanivel4 == 1) {
-                    	System.out.println("Vamos al nivel 2");
+                    	System.out.println("Vamos al nivel 5");
                         premio += 800000;
                         System.out.println(" Premio acumulado: " + premio);
                         System.out.println("¿Desea continuar?");
@@ -572,7 +573,7 @@ public class Inicio_Juego {
 
                 case 5:
                     if (respuestanivel4 == 2) {
-                    	System.out.println("Vamos al nivel 2");
+                    	System.out.println("Vamos al nivel 5");
                         premio += 800000;
                         System.out.println(" Premio acumulado: " + premio);
                         System.out.println("¿Desea continuar?");
