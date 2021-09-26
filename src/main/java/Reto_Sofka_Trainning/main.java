@@ -5,31 +5,31 @@ public class main {
 	
 	 public static void main(String[] args)
 	    {
-	        Scanner datoContinue = new Scanner(System.in);
-	        int continuar = 9;
-	        int numeroJugadores = 0;
-	        int conocerPremios = 0;
+	        Scanner Seguir = new Scanner(System.in);
+	        String continuar = "";
+	        int cantidadJugadores = 0;
+	        String verPremios = "";
 	        Inicio_Juego juego = new Inicio_Juego();
 	        do {
 	        	juego.iniciarJuego();
 	            System.out.println("Nuevo Jugador?");
 	            System.out.println("Si: presiona la tecla 0");
 	            System.out.println("No: presiona la tecla 9");
-	            continuar = datoContinue.nextInt();
-	            juego.Jugadores[numeroJugadores] = juego.nombreJugador;
-	            juego.PremiosJugadores[numeroJugadores] = juego.premio;
+	            continuar = Seguir.next();
+	            juego.Jugadores[cantidadJugadores] = juego.nombreJugador;
+	            juego.PremiosJugadores[cantidadJugadores] = juego.premio;
 	            juego.premio =0;
-	            numeroJugadores += 1;
-	        } while (continuar==0);
+	            cantidadJugadores += 1;
+	        } while (continuar.equals("s"));
 
-	        System.out.println("Desea conocer la lista de los participantes y sus premios?");
-	        System.out.println("Si: presiones 0");
-	        System.out.println("No: presiones 9");
-	        conocerPremios = datoContinue.nextInt();
+	        System.out.println("Ver la lista de los participantes y sus premios");
+	        System.out.println("Si: ingrese la tecla s");
+	        System.out.println("No: ingrese la tecla n");
+	        verPremios = Seguir.next();
 
-	        if(conocerPremios==0)
+	        if(verPremios.equals("s"))
 	        {
-	            for(int i =0; i < numeroJugadores; i++)
+	            for(int i =0; i < cantidadJugadores; i++)
 	                System.out.println("Nombre: " +juego.Jugadores[i]+ " Premio: " +juego.PremiosJugadores[i] );
 
 	        }
